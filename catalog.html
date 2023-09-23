@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - ChinaShop</title>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+    <header>
+        <section class="navbar">
+            <div class="container">
+                <div class="navbar__content">
+                    <div class="navbar__menu-btn">
+                        <button><img src="./assets/img/ico/menu.svg" alt="menu"></button>
+                    </div>
+                    <div class="navbar__logo">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </div>
+                    <div class="navbar__search-panel">
+                        <div class="navbar__search-geo">
+                            <form action="#">
+                                <select name="navbar__search-geo-item" id="geo">
+                                    <option value="Везде">Везде</option>
+                                    <option value="Ташкент">Ташкент</option>
+                                    <option value="Москва">Москва</option>
+                                </select>
+                                <input type="text" placeholder="">
+                                <button type="submit">
+                                    <img src="./assets/img/ico/search.svg" alt="search">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navbar__phone"><a href="tel:+7 (495) 765-29-67">+7 (495) 765-29-67</a></div>
+                    <div class="navbar__cart-wrapper">
+                        <div class="navbar__cart-item">
+                            <img src="./assets/img/ico/user.svg" alt="user">
+                            <a href="#">Войти</a>
+                        </div>
+                        <div class="navbar__cart-item">
+                            <img src="./assets/img/ico/favorites.svg" alt="favorites">
+                            <a href="#">Избранное</a>
+                        </div>
+                        <div class="navbar__cart-item">
+                            <img src="./assets/img/ico/cart.svg" alt="cart">
+                            <a href="#">Корзина</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prenavbar">
+            <div class="container">
+                <div class="prenavbar__content">
+                    <nav>
+                        <ul>
+                            <li><a class="prenavbar__link-active" href="#">Как сделать заказ и оплатить</a></li>
+                            <li><a class="prenavbar__link" href="#">Как мы работаем</a></li>
+                            <li><a class="prenavbar__link" href="#">Контакты</a></li>
+                            <li><a class="prenavbar__link" href="#">Отзывы</a></li>
+                            <li><a class="prenavbar__link" href="#">Новости</a></li>
+                            <button class="outline__btn">Обратный звонок</button>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="crumbs">
+            <div class="container">
+                <div class="crumbs__content">
+                    <a class="crumbs__first" href="#">Главная /</a><a class="crumbs__active" href="#">Каталог</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__content">
+                    <div class="intro__item">
+                        <h1>Каталог</h1>
+                    </div>
+                    <div class="intro__filter">
+                        <div class="intro__filter-settings">
+                            <div class="intro__filter-settings-item">
+                                <p>Сортировать по</p>
+                            </div>
+                            <div class="intro__filter-settings-item">
+                                <select name="intro__filter-item" id="geo">
+                                    <option value="Популярности">Популярности</option>
+                                    <option value="Популярности">Рейтингу</option>
+                                    <option value="Популярности">По цене</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="intro__filter-checkbox">
+                            <form action="#">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                            </form>
+                            <a class="intro__filter-item-text" href="#">Распродажа</a>
+                            <a class="intro__filter-item-btn" href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__content">
+                    <div class="catalog__menu">
+                        <div class="catalog__menu-item">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Компьютеры и оргтехника</a></li>
+                                    <li><a href="#">Электроника</a></li>
+                                    <li><a href="#">Бытовая техника</a></li>
+                                    <li><a href="#">Одежда для мужчин </a></li>
+                                    <li><a href="#">Одежда для женщин</a></li>
+                                    <li><a href="#">Все для детей</a></li>
+                                    <li><a href="#">Автотовары</a></li>
+                                    <li><a class="catalog__item-active" href="#">Красота и здоровье</a></li>
+                                    <li><a href="#">Спорт и развлечения</a></li>
+                                    <li><a href="#">Товары для животных</a></li>
+                                    <li><a href="#">Хобби и творчество</a></li>
+                                    <li><a href="#">Канцелярские товары</a></li>
+                                    <li><a href="#">Бытовая химия</a></li>
+                                    <li><a href="#">Спорт и развлечения</a></li>
+                                    <li><a href="#">Товары для животных</a></li>
+                                    <li><a href="#">Хобби и творчество</a></li>
+                                    <li><a href="#">Канцелярские товары</a></li>
+                                    <li><a href="#">Бытовая химия</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="catalog__menu-discount">
+                            <a href="#">
+                                Premium
+                                <img src="./assets/img/ico/diamond.svg" alt="diamond">
+                            </a>
+                            <a href="#">
+                                Акции
+                                <img src="./assets/img/ico/fire.svg" alt="fire">
+                            </a>
+                            <a href="#">
+                                Уцененные товары
+                                <img src="./assets/img/ico/discount.svg" alt="discount">
+                            </a>
+                        </div>
+                        <div class="catalog__price-filter">
+                            <div class="catalog__price-intro">
+                                <h1>Цена</h1>
+                            </div>
+                            <div class="catalog__filter-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="188" height="30" viewBox="0 0 188 30"
+                                    fill="none">
+                                    <rect x="0.5" y="10.5" width="187" height="5" rx="2.5" fill="#E1E1E1"
+                                        stroke="#E1E1E1" />
+                                    <rect x="46.2617" y="10" width="80.4188" height="6" rx="3" fill="#B81C29" />
+                                    <g filter="url(#filter0_d_2918_33749)">
+                                        <ellipse cx="45.2565" cy="13" rx="10.0524" ry="10" fill="white" />
+                                        <ellipse cx="45.2565" cy="13" rx="10.0524" ry="10" stroke="#696969"
+                                            stroke-linecap="round" stroke-linejoin="bevel" />
+                                    </g>
+                                    <g filter="url(#filter1_d_2918_33749)">
+                                        <ellipse cx="133.665" cy="13" rx="10.0524" ry="10" fill="white" />
+                                        <ellipse cx="133.665" cy="13" rx="10.0524" ry="10" stroke="#696969"
+                                            stroke-linecap="round" stroke-linejoin="bevel" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_2918_33749" x="30.7041" y="0.5" width="29.1045"
+                                            height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_2918_33749" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_dropShadow_2918_33749" result="shape" />
+                                        </filter>
+                                        <filter id="filter1_d_2918_33749" x="119.112" y="0.5" width="29.1045"
+                                            height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_2918_33749" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_dropShadow_2918_33749" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="catalog__filter-price-settings">
+                                    <div class="catalog__filter-price-min">
+                                        <p>Min</p>
+                                        <input type="number" placeholder="0">
+                                    </div>
+                                    <div class="catalog__filter-price-min">
+                                        <p>Max</p>
+                                        <input type="number" placeholder="000">
+                                    </div>
+                                </div>
+                                <button class="outline__btn">Сбросить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__wrapper-main">
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/cap.png" alt="cap">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Бейсболка с дизайнерским принтом Super Shape 02
+                                    абстракция
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

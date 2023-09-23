@@ -1,0 +1,13 @@
+@import "_color";
+.outline__btn {
+    padding: 10px 20px;
+    border: 2px solid $red1;
+    color: $red1;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    &:hover {
+        background-color: $red1;
+        color: #fff;
+    }
+}
