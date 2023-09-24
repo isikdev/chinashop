@@ -108,6 +108,31 @@ input::-webkit-inner-spin-button {
         }
     }
 }
+.navbar__mb {
+    display: none;
+    &-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        &:first-child {
+            margin: 0 0;
+        }
+    }
+    &-menu-dk-btn {
+        button {
+            background: $black;
+            border: 0px none;
+            outline: 0px none;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
 .prenavbar {
     background-color: $greyscale2;
     &__content {
@@ -330,5 +355,287 @@ input::-webkit-inner-spin-button {
             font-weight: 300;
             margin: 5px 0;
         }
+    }
+    &__wrapper-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+    }
+    &__footer-item {
+        display: flex;
+        a {
+            text-decoration: none;
+            color: $greyscale1;
+        }
+        p {
+            color: $black;
+            span {
+                margin-right: 10px;
+                color: $red1;
+                font-weight: 700;
+            }
+        }
+    }
+    &__footer-links-page {
+        margin-left: 10px;
+        a {
+            text-decoration: none;
+            color: $black;
+            &:hover {
+                color: $red1;
+            }
+        }
+    }
+    &__footer-link-active {
+        color: $red1 !important;
+    }
+}
+.watch {
+    background-color: $greyscale4;
+    padding: 50px 0;
+    &__intro {
+        h1 {
+            font-family: "Questrial", sans-serif;
+            font-weight: 500;
+            color: $red1;
+        }
+    }
+    &__slick {
+        button {
+            background: transparent;
+            border: 0px none;
+            outline: 0px none;
+            margin: 0 12px;
+        }
+    }
+    &__intro-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card-wrapper {
+        margin: 20px 0;
+        display: flex;
+    }
+    &__card-item {
+        background-color: #fff;
+        padding: 10px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 360px;
+    }
+    &__card-text {
+        margin-left: 10px;
+        padding: 10px;
+        h1 {
+            font-size: 11px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 100px;
+        }
+    }
+}
+.footer {
+    background-color: $black;
+    padding: 50px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tel-item {
+        display: flex;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: $greyscale2;
+            opacity: 0.8;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 10px;
+        }
+    }
+    &__politics-intro {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $red1;
+        padding-bottom: 30px;
+    }
+    &__politics-intro-item {
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 10px 0;
+            &:first-child {
+                margin: 0 0;
+            }
+        }
+    }
+    &__politics-intro-btn {
+        margin-left: 100px;
+    }
+    &__politics-menu {
+        nav {
+            margin: 20px 0;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    margin: 0 10px;
+                    &:first-child {
+                        margin: 0 0;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+.profooter {
+    background-color: #000;
+    padding: 20px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        a {
+            text-decoration: none;
+            color: #fff;
+            opacity: 0.8;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        img {
+                            cursor: pointer;
+                            &:hover {
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .profooter__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profooter__item {
+        margin: 10px 0;
+    }
+    .footer__content {
+        flex-direction: column;
+    }
+    .watch__card-item {
+        max-width: 100%;
+    }
+    .catalog__wrapper-main {
+        margin: 30px 0 0 10px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar__mb {
+        display: block;
+        padding: 20px 0;
+    }
+    .catalog__menu {
+        display: none;
+    }
+    .prenavbar {
+        display: none;
+    }
+    .navbar__search-panel {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer__politics-menu {
+        display: none;
+    }
+    .footer__politics-intro {
+        flex-direction: column;
+        border-bottom: 0;
+    }
+    .footer__politics-intro-btn {
+        margin: 20px auto;
+    }
+    .footer__tel-item a {
+        text-align: center;
+    }
+    .catalog__wrapper-footer {
+        display: none;
+    }
+    .catalog__wrapper-main {
+        margin: 0 0;
+        grid-template-columns: (1fr)
+    }
+    .catalog__item-card {
+        max-width: 100%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .intro__content {
+        flex-direction: column;
+    }
+    .intro__item h1 {
+        text-align: left;
+    }
+    .intro__filter {
+        flex-direction: column-reverse;
+    }
+    .intro__filter-checkbox {
+        justify-content: center;
+    }
+    .crumbs__content {
+        display: none;
+    }
+    .navbar__cart-item {
+        margin: 0 10px;
+    }
+    .navbar__cart-item a {
+        display: none;
+    }
+    .navbar__search-geo form input {
+        padding: 10px 0;
+    }
+    .navbar__phone a {
+        font-size: 14px;
     }
 }

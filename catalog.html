@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог - ChinaShop</title>
     <link rel="stylesheet" href="./assets/scss/main.css">
+    <link rel="stylesheet" href="./assets/js/libs/slick/slick.css">
+    <link rel="stylesheet" href="./assets/js/libs/slick/slick-theme.css">
 </head>
 
 <body>
@@ -47,6 +49,57 @@
                         <div class="navbar__cart-item">
                             <img src="./assets/img/ico/cart.svg" alt="cart">
                             <a href="#">Корзина</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="navbar__mb">
+            <div class="container">
+                <div class="navbar__mb-content">
+                    <div class="navbar__mb-head">
+                        <div class="navbar__menu-btn">
+                            <button><img src="./assets/img/ico/menu.svg" alt="menu"></button>
+                        </div>
+                        <div class="navbar__phone"><a href="tel:+7 (495) 765-29-67">+7 (495) 765-29-67</a></div>
+                        <div class="navbar__cart-wrapper">
+                            <div class="navbar__cart-item">
+                                <img src="./assets/img/ico/user.svg" alt="user">
+                                <a href="#">Войти</a>
+                            </div>
+                            <div class="navbar__cart-item">
+                                <img src="./assets/img/ico/favorites.svg" alt="favorites">
+                                <a href="#">Избранное</a>
+                            </div>
+                            <div class="navbar__cart-item">
+                                <img src="./assets/img/ico/cart.svg" alt="cart">
+                                <a href="#">Корзина</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar__mb-head">
+                        <div class="navbar__logo">
+                            <img src="./assets/img/logo.png" alt="logo">
+                        </div>
+                        <div class="navbar__mb-menu-dk-btn">
+                            <button><img src="./assets/img/ico/menu-dark.svg" alt="menu"></button>
+                        </div>
+                    </div>
+                    <div class="navbar__mb-head">
+                        <div class="navbar__search-panel">
+                            <div class="navbar__search-geo">
+                                <form action="#">
+                                    <select name="navbar__search-geo-item" id="geo">
+                                        <option value="Везде">Везде</option>
+                                        <option value="Ташкент">Ташкент</option>
+                                        <option value="Москва">Москва</option>
+                                    </select>
+                                    <input type="text" placeholder="">
+                                    <button type="submit">
+                                        <img src="./assets/img/ico/search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,6 +310,33 @@
                         </div>
                         <div class="catalog__item-card">
                             <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy 2.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Футболка с дизайнерским принтом Super Shape 06
+                                    абстракция
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
                                 <img src="./assets/img/shop/boy.png" alt="boy">
                             </div>
                             <div class="catalog__card-intro">
@@ -291,6 +371,33 @@
                                 </h1>
                                 <p>
                                     Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/iphone.png" alt="iphone">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    2 399 ₽
+                                </h1>
+                                <p>
+                                    Чехол для iphone 12 с дизайнерским принтом Super Shape 03
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog__item-card">
+                            <div class="catalog__card-img">
+                                <img src="./assets/img/shop/boy 3.png" alt="boy">
+                            </div>
+                            <div class="catalog__card-intro">
+                                <h1>
+                                    3 179 ₽
+                                </h1>
+                                <p>
+                                    Футболка с дизайнерским принтом Super Shape 04
+                                    формулы
                                 </p>
                             </div>
                         </div>
@@ -426,9 +533,175 @@
                         </div>
                     </div>
                 </div>
+                <div class="catalog__wrapper-footer">
+                    <div class="catalog__footer-item">
+                        <a href="#">Страницы: </a>
+                        <div class="catalog__footer-links-page">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a class="catalog__footer-link-active" href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                    <div class="catalog__footer-item"><button class="outline__btn">Показать больше</button></div>
+                    <div class="catalog__footer-item">
+                        <p><span>895</span>Продуктов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="watch">
+            <div class="container">
+                <div class="watch__content">
+                    <div class="watch__intro-wrapper">
+                        <div class="watch__intro">
+                            <h1>Ранее вы смотрели</h1>
+                        </div>
+                        <div class="watch__slick">
+                            <button class="prev"><img src="./assets/img/ico/prev.svg" alt="prev"></button>
+                            <button class="next"><img src="./assets/img/ico/next.svg" alt="next"></button>
+                        </div>
+                    </div>
+                    <div class="watch__card-wrapper">
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy 2.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy 3.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy 3.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy 2.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                        <div class="watch__card-item">
+                            <div class="watch__card-img">
+                                <img src="./assets/img/shop/boy.png" alt="boy">
+                            </div>
+                            <div class="watch__card-text">
+                                <h1>Футболка с дизайнерским принтом Super Shape 01 градиент</h1>
+                                <p>от 1 999 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <img src="./assets/img/logo-dark.png" alt="logo">
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__tel-item">
+                            <img src="./assets/img/ico/dark/call.svg" alt="call">
+                            <a href="tel:+7 495 47-51-10">+7 (495) 47-51-10</a>
+                        </div>
+                        <div class="footer__tel-item">
+                            <img src="./assets/img/ico/dark/call.svg" alt="call">
+                            <a href="tel:+7 901 286-51-10">+7 (901) 286-51-10</a>
+                        </div>
+                        <div class="footer__tel-item">
+                            <img src="./assets/img/ico/dark/mail.svg" alt="mail">
+                            <a href="mailto:29@showroom.ru">29@showroom.ru</a>
+                        </div>
+                        <div class="footer__tel-item">
+                            <img src="./assets/img/ico/dark/map.svg" alt="map-pin">
+                            <a href="#">г. Москва, ул. Свободы, д.24</a>
+                        </div>
+                    </div>
+                    <div class="footer__item footer__politics">
+                        <div class="footer__politics-item">
+                            <div class="footer__politics-intro">
+                                <div class="footer__politics-intro-item">
+                                    <a href="#">Политика безопасности</a>
+                                    <a href="#">Пользовательское сообщение</a>
+                                </div>
+                                <div class="footer__politics-intro-btn">
+                                    <button class="outline__btn-white">Связаться с нами</button>
+                                </div>
+                            </div>
+                            <div class="footer__politics-menu">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Помощь</a></li>
+                                        <li><a href="#">Личный кабинет</a></li>
+                                        <li><a href="#">История заявок</a></li>
+                                        <li><a href="#">Закладки</a></li>
+                                        <li><a href="#">Рассылка</a></li>
+                                        <li><a href="#">Помощь</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="profooter">
+            <div class="container">
+                <div class="profooter__content">
+                    <div class="profooter__item">
+                        <a href="#">2023 © Logotype. Товары из Китая оптом и в розницу. </a>
+                    </div>
+                    <div class="profooter__item">
+                        <nav>
+                            <ul>
+                                <li><a href="#"><img src="./assets/img/ico/facebook.svg" alt="facebook"></a></li>
+                                <li><a href="#"><img src="./assets/img/ico/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#"><img src="./assets/img/ico/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./assets/img/ico/youtube.svg" alt="youtube"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="profooter__item">
+                        <a href="#">Powered by © OT Commerce otcommerce.co</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="./assets/js/libs/slick/slick.min.js"></script>
+    <script src="./assets/js/libs/slick/slick.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
